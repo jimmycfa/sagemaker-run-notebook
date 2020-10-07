@@ -128,7 +128,7 @@ def execute_notebook(
             {
                 "InputName": "notebook",
                 "S3Input": {
-                    "S3Uri": input_path,
+                    "S3Uri": os.path.dirname(input_path),
                     "LocalPath": input_directory,
                     "S3DataType": "S3Prefix",
                     "S3InputMode": "File",
